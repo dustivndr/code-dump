@@ -1,3 +1,3 @@
 # Code Dump
 
-Programs dump, some random programs or some stupid games
+Programs dump: some random programs, some stupid games, etc.
