@@ -85,9 +85,9 @@ public class Main {
             // Item row
             for (int j = 0; j < 3; j++) {
                 if (items[i][j]) {
-                    System.out.print("+" + rows[i] + "+ ");
+                    System.out.print("|" + rows[i] + "| ");
                 } else {
-                    System.out.print("+.+ ");
+                    System.out.print("|.| ");
                 }
             }
             System.out.println();
