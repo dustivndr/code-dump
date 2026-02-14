@@ -4,3 +4,5 @@ build/
 *.code-workspace
 
 *.class
+
+bar.sh
