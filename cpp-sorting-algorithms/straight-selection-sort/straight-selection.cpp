@@ -13,7 +13,7 @@ int main()
     const int n = 500000;
     int arr[n];
 
-    int counter = 0;
+    long double counter = 0;
 
     for (int i = 0; i < n; i++) {
         randomNum >> arr[i];
@@ -22,18 +22,13 @@ int main()
     auto start = std::chrono::steady_clock::now();
 
     for (int i = 0; i < n - 1; i++) {
-        int minIndex = i;
         for (int j = i + 1; j < n; j++) {
-            if (arr[j] < arr[minIndex]) {
-                minIndex = j;
+            if (arr[i] > arr[j]) {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+                counter++;
             }
-        }
-
-        if (minIndex != i) {
-            int temp = arr[i];
-            arr[i] = arr[minIndex];
-            arr[minIndex] = temp;
-            counter++;
         }
     }
 
