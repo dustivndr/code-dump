@@ -6,3 +6,8 @@ build/
 *.class
 
 bar.sh
+
+*.txt
+dino
+*.o
+*.swp
